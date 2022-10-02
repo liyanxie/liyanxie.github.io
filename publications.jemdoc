@@ -1,0 +1,64 @@
+# jemdoc: menu{MENU}{publications.html}, nofooter
+== Publications and Preprints
+
+Here is my [https://scholar.google.com/citations?user=KtLwkBYAAAAJ&hl=en Google Scholar] profile.
+
+== Preprints
+. [https://arxiv.org/pdf/2206.06777.pdf Window-Limited CUSUM for Sequential Change Detection.]\n
+Liyan Xie, George V. Moustakides and Yao Xie.
+. [https://arxiv.org/abs/2108.12827 Survival Analysis with Graph-Based Regularization for Predictors.]\n
+  Xi He, Liyan Xie, Yao Xie, and Pinar Keskinocak. 
+. [https://arxiv.org/pdf/2105.14348.pdf Robust Hypothesis Testing with Wasserstein Uncertainty Sets.]\n
+  Liyan Xie, Rui Gao, and Yao Xie.
+. [http://arxiv.org/abs/1910.09083 Spectral-CUSUM for Online Community Change Detection.] \n
+  Minghe Zhang, Liyan Xie, and Yao Xie.
+
+
+== Journal Papers
+. Online High-Dimensional Change-point Detection using Topological Data Analysis.\n
+  Xiaojun Zheng, Simon Mak, Liyan Xie, and Yao Xie. Minor revision at Technometrics.
+. [https://arxiv.org/pdf/2102.05724.pdf Sequential Change-Point Detection for Mutually Exciting Point Processes.]\n
+  Haoyun Wang, Liyan Xie, Alex Cuozzo, Simon Mak, and Yao Xie. Technometrics, 2022.
+. [https://arxiv.org/abs/2106.00072 Early Detection of COVID-19 Hotspots Using Spatio-Temporal Data.]\n
+  Shixiang Zhu, Alexander Bukharin, Liyan Xie, Shihao Yang, Pinar Keskinocak, and Yao Xie. IEEE Journal of Selected Topics in Signal Processing (JSTSP), 2022.
+. [https://arxiv.org/abs/2010.11285 Sequential Change Detection by Optimal Weighted L2 Divergence.]\n
+  Liyan Xie and Yao Xie. IEEE Journal on Selected Areas in Information Theory, 2021.
+. [https://arxiv.org/pdf/2104.04186.pdf Sequential Change Detection: Classical Results and New Directions.] (Survey paper) \n
+  Liyan Xie, Shaofeng Zou, Yao Xie, and Venugopal V. Veeravalli. IEEE Journal on Selected Areas in Information Theory, 2021.
+. [https://arxiv.org/abs/2009.07356 High-resolution Spatio-temporal Model for County-level COVID-19 Activity in the US.] \n
+  Shixiang Zhu, Alexander Bukharin, Liyan Xie, Mauricio Santillana, Shihao Yang, and Yao Xie. ACM Transactions on Management Information Systems, 2021.
+. [https://arxiv.org/abs/1811.03936 Sequential Subspace Change-Point Detection.]\n
+  Liyan Xie, Yao Xie, and George V. Moustakides. Sequential Analysis, vol. 39, no. 3, pp. 307-335, 2020.
+. [https://arxiv.org/pdf/2003.12935.pdf Convex Parameter Recovery for Interacting Marked Processes.]\n
+  Anatoli Juditsky, Arkadi Nemirovski, Liyan Xie, and Yao Xie. IEEE Journal on Selected Areas in Information Theory, vol. 1, no. 3, pp. 799-813, Nov. 2020.
+. [https://www.mdpi.com/1099-4300/20/2/108 Sequential change-point detection via online convex optimization.]\n
+Yang Cao, Liyan Xie, Yao Xie, and Huan Xu. Entropy, Special Issue on "Information Theory in Machine Learning and Data Science". Vol. 20, No.2, 108. 2018.
+
+
+== Conference Papers
+. [https://arxiv.org/pdf/2006.04004.pdf Distributionally Robust k-Nearest Neighbors for Few-Shot Learning.]\n
+  Shixiang Zhu, Liyan Xie, Minghe Zhang, Rui Gao, and Yao Xie. Neurips 2022.
+. [http://arxiv.org/abs/2204.13034 Minimax Robust Quickest Change Detection using Wasserstein Ambiguity Sets.]\n
+Liyan Xie. ISIT 2022.
+. [https://arxiv.org/pdf/2102.05821.pdf Optimality of Graph Scanning Statistic for Online Community Detection.]\n
+  Liyan Xie and Yao Xie. ISIT 2021.
+. [https://arxiv.org/pdf/2006.07506.pdf Uncertainty Quantification for Inferring Hawkes Networks.]\n
+  Haoyun Wang, Liyan Xie, Alex Cuozzo, Simon Mak, and Yao Xie. Neurips 2020.
+. [https://arxiv.org/pdf/1910.09083.pdf Online Community Detection by Spectral CUSUM.] \n
+Minghe Zhang, Liyan Xie, and Yao Xie. ICASSP 2020.
+. [https://arxiv.org/abs/1901.08196 Asynchronous multi-sensor change-point detection for seismic tremors.] \n
+Liyan Xie, Yao Xie, and George V. Moustakides. ISIT 2019.
+. [http://papers.nips.cc/paper/8015-robust-hypothesis-testing-using-wasserstein-uncertainty-sets Robust hypothesis testing using Wasserstein uncertainty sets.]\n
+Rui Gao, Liyan Xie, Yao Xie, and Huan Xu. NeurIPS 2018 (Spotlight).
+. [https://ieeexplore.ieee.org/abstract/document/8646377 First-order optimal sequential subspace change-point detection.]\n
+Liyan Xie, George V. Moustakides, and Yao Xie. GlobalSIP 2018.
+. [http://proceedings.mlr.press/v84/cao18a.html Nearly second-order optimality of online joint detection and estimation via one-sample update schemes.]\n
+Yang Cao, Liyan Xie, Yao Xie, and Huan Xu. AISTATS 2018.
+. [https://ieeexplore.ieee.org/abstract/document/8645222 Communication efficient signal detection for distributed ambient noise imaging.]\n
+Liyan Xie, Yao Xie, Sin-Mei Wu, Fan-Chi Lin, and Wenzhan Song. Asilomar 2018.
+. [https://ieeexplore.ieee.org/document/8313092 Sequential detection of low-rank changes using extreme eigenvalues.] \n
+Liyan Xie and Yao Xie. CAMSAP 2017. 
+
+== Thesis
+. Robust Statistical Inference Through the lens of Optimization [https://mypage.cuhk.edu.cn/academics/xieliyan/XIE-DISSERTATION-2021.pdf (PDF)]. Ph. D. dissertation, Georgia Tech, May. 2021.
+
