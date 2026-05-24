@@ -8,15 +8,15 @@
 
 .home-hero {
   display: grid;
-  grid-template-columns: minmax(130px, 180px) minmax(0, 1fr);
-  gap: 2.25rem;
+  grid-template-columns: 140px minmax(0, 1fr);
+  gap: 1.9rem;
   align-items: start;
   margin-bottom: 2rem;
 }
 
 .home-photo {
   width: 100%;
-  max-width: 180px;
+  max-width: 140px;
 }
 
 .home-photo img {
@@ -92,7 +92,7 @@
   }
 
   .home-photo {
-    max-width: 150px;
+    max-width: 130px;
   }
 
   .home-intro h1 {
