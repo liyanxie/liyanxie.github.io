@@ -231,6 +231,27 @@
   font-weight: 600;
 }
 
+.publication-title-link {
+  color: var(--global-text-color);
+  text-decoration: none;
+}
+
+.publication-title-link:hover {
+  color: var(--global-theme-color);
+  text-decoration: none;
+}
+
+.publication-title-extra {
+  color: var(--global-theme-color);
+  font-weight: 400;
+  margin-left: 0.35rem;
+  white-space: nowrap;
+}
+
+.publication-title-extra:hover {
+  color: var(--global-theme-color);
+}
+
 .publication-authors {
   margin-top: 0.1rem;
 }

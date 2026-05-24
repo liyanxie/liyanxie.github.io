@@ -10,6 +10,27 @@
 {% if paper_url contains 'arxiv.org/abs/' %}
   {% assign paper_url = paper_url | replace: '/abs/', '/pdf/' %}
 {% endif %}
+{% assign paper_href = paper_url %}
+{% if paper_url != blank %}
+  {% unless paper_url contains '://' %}
+    {% assign paper_href = paper_url | prepend: '/assets/pdf/' | relative_url %}
+  {% endunless %}
+{% endif %}
+{% assign code_href = '' %}
+{% assign code_label = '' %}
+{% if entry.code %}
+  {% if entry.code contains '://' %}
+    {% assign code_href = entry.code %}
+    {% if entry.code contains 'github.com' %}
+      {% assign code_label = 'GitHub' %}
+    {% else %}
+      {% assign code_label = 'Code' %}
+    {% endif %}
+  {% else %}
+    {% assign code_href = entry.code | prepend: '/assets/pdf/' | relative_url %}
+    {% assign code_label = 'Code' %}
+  {% endif %}
+{% endif %}
 
 <div
   id="{{ entry.key }}"
@@ -20,7 +41,14 @@
 >
   <div class="publication-main">
     <div class="publication-title">
-      {{ entry.title }}
+      {% if paper_href != blank %}
+        <a class="publication-title-link" href="{{ paper_href }}">{{ entry.title }}</a>
+      {% else %}
+        {{ entry.title }}
+      {% endif %}
+      {% if code_href != blank %}
+        <a class="publication-title-extra" href="{{ code_href }}">({{ code_label }})</a>
+      {% endif %}
     </div>
 
     <div class="publication-authors">
@@ -68,26 +96,8 @@
       <div class="publication-note">{{ entry.note }}</div>
     {% endif %}
 
-    {% if paper_url or entry.code or entry.doi or entry.bibtex_show %}
+    {% if entry.doi or entry.bibtex_show %}
       <div class="publication-links">
-        {% if paper_url %}
-          {% if paper_url contains '://' %}
-            <a href="{{ paper_url }}">PDF</a>
-          {% else %}
-            <a href="{{ paper_url | prepend: '/assets/pdf/' | relative_url }}">PDF</a>
-          {% endif %}
-        {% endif %}
-        {% if entry.code %}
-          {% if entry.code contains '://' %}
-            {% if entry.code contains 'github.com' %}
-              <a href="{{ entry.code }}">GitHub</a>
-            {% else %}
-              <a href="{{ entry.code }}">Code</a>
-            {% endif %}
-          {% else %}
-            <a href="{{ entry.code | prepend: '/assets/pdf/' | relative_url }}">Code</a>
-          {% endif %}
-        {% endif %}
         {% if entry.doi %}
           <a href="https://doi.org/{{ entry.doi }}">DOI</a>
         {% endif %}
