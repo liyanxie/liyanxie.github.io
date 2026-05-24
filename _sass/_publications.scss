@@ -182,8 +182,50 @@
   }
 }
 
+.publication-controls {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin: 1rem 0 1.25rem;
+}
+
+.publication-control {
+  border: 1px solid var(--global-divider-color);
+  border-radius: 4px;
+  padding: 0.25rem 0.65rem;
+  color: var(--global-text-color);
+  background: var(--global-bg-color);
+}
+
+.publication-control.active,
+.publication-control:hover {
+  color: var(--global-theme-color);
+  border-color: var(--global-theme-color);
+}
+
+.publication-topic-filters {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.45rem 0.85rem;
+  margin-bottom: 1.25rem;
+  font-size: 0.95rem;
+}
+
+.publication-topic-option {
+  display: inline-flex;
+  gap: 0.3rem;
+  align-items: center;
+}
+
 .publication-entry {
+  display: flex;
+  gap: 1.25rem;
+  justify-content: space-between;
   line-height: 1.45;
+}
+
+.publication-main {
+  min-width: 0;
 }
 
 .publication-title {
@@ -206,6 +248,27 @@
   gap: 0.75rem;
   margin-top: 0.2rem;
   font-size: 0.95rem;
+}
+
+.publication-year-side {
+  flex: 0 0 auto;
+  min-width: 4.3rem;
+  color: var(--global-text-color-light);
+  font-size: 2.15rem;
+  font-weight: 300;
+  line-height: 1.1;
+  text-align: right;
+}
+
+.publication-dynamic-view h2 {
+  margin-top: 1.5rem;
+}
+
+@media (max-width: 575.98px) {
+  .publication-year-side {
+    min-width: 3.2rem;
+    font-size: 1.45rem;
+  }
 }
 
 .citation,

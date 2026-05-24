@@ -8,88 +8,98 @@
   {% assign title_url = entry.pdf %}
 {% endif %}
 
-<div id="{{ entry.key }}" class="publication-entry">
-  <div class="publication-title">
-    {% if title_url %}
-      <a href="{{ title_url }}">{{ entry.title }}</a>
-    {% else %}
-      {{ entry.title }}
-    {% endif %}
-  </div>
-
-  <div class="publication-authors">
-    {% for author in entry.author_array %}
-      {% assign author_last_name = author.last | regex_replace: '[*∗†‡§¶‖&^]', '' %}
-      {% assign author_last_html = author.last | regex_replace: '([*∗†‡§¶‖&^]+)', '<sup>\1</sup>' %}
-      {% assign author_is_self = false %}
-      {% if site.scholar.last_name contains author_last_name and site.scholar.first_name contains author.first %}
-        {% assign author_is_self = true %}
-      {% endif %}
-      {% unless forloop.first %}
-        {% if forloop.last %}, and {% else %}, {% endif %}
-      {% endunless %}
-      {% if author_is_self %}
-        <strong>{{ author.first }} {{ author_last_html }}</strong>
+<div
+  id="{{ entry.key }}"
+  class="publication-entry"
+  data-year="{{ entry.year }}"
+  data-topic="{{ entry.topic | default: 'other' }}"
+  data-category="{{ entry.category | default: 'other' }}"
+>
+  <div class="publication-main">
+    <div class="publication-title">
+      {% if title_url %}
+        <a href="{{ title_url }}">{{ entry.title }}</a>
       {% else %}
-        {{ author.first }} {{ author_last_html }}
+        {{ entry.title }}
       {% endif %}
-    {% endfor %}
+    </div>
+
+    <div class="publication-authors">
+      {% for author in entry.author_array %}
+        {% assign author_last_name = author.last | regex_replace: '[*∗†‡§¶‖&^]', '' %}
+        {% assign author_last_html = author.last | regex_replace: '([*∗†‡§¶‖&^]+)', '<sup>\1</sup>' %}
+        {% assign author_is_self = false %}
+        {% if site.scholar.last_name contains author_last_name and site.scholar.first_name contains author.first %}
+          {% assign author_is_self = true %}
+        {% endif %}
+        {% unless forloop.first %}
+          {% if forloop.last %}, and {% else %}, {% endif %}
+        {% endunless %}
+        {% if author_is_self %}
+          <strong>{{ author.first }} {{ author_last_html }}</strong>
+        {% else %}
+          {{ author.first }} {{ author_last_html }}
+        {% endif %}
+      {% endfor %}
+    </div>
+
+    {% assign proceedings = 'inproceedings,incollection' | split: ',' %}
+    {% assign thesis = 'thesis,mastersthesis,phdthesis' | split: ',' %}
+    {% capture venue %}
+      {% if entry.type == 'article' %}
+        {{ entry.journal }}
+      {% elsif proceedings contains entry.type %}
+        {{ entry.booktitle }}
+      {% elsif thesis contains entry.type %}
+        {{ entry.school }}
+      {% elsif entry.howpublished %}
+        {{ entry.howpublished }}
+      {% endif %}
+    {% endcapture %}
+    {% assign venue = venue | strip %}
+    {% if venue != blank or entry.year %}
+      <div class="publication-venue">
+        {% if venue != blank %}<em>{{ venue }}</em>{% endif %}{% if venue != blank and entry.year %}, {% endif %}{{ entry.year }}
+      </div>
+    {% endif %}
+
+    {% if entry.note %}
+      <div class="publication-note">{{ entry.note }}</div>
+    {% endif %}
+
+    {% if entry.code or entry.doi or entry.pdf or entry.bibtex_show %}
+      <div class="publication-links">
+        {% if entry.code %}
+          {% if entry.code contains '://' %}
+            <a href="{{ entry.code }}">GitHub</a>
+          {% else %}
+            <a href="{{ entry.code | prepend: '/assets/pdf/' | relative_url }}">Code</a>
+          {% endif %}
+        {% endif %}
+        {% if entry.doi %}
+          <a href="https://doi.org/{{ entry.doi }}">DOI</a>
+        {% endif %}
+        {% if entry.pdf %}
+          {% if entry.pdf contains '://' %}
+            <a href="{{ entry.pdf }}">PDF</a>
+          {% else %}
+            <a href="{{ entry.pdf | prepend: '/assets/pdf/' | relative_url }}">PDF</a>
+          {% endif %}
+        {% endif %}
+        {% if entry.bibtex_show %}
+          <a class="bibtex" role="button">BibTeX</a>
+        {% endif %}
+      </div>
+    {% endif %}
+
+    {% if entry.bibtex_show %}
+      <div class="bibtex hidden">
+        {% highlight bibtex %}
+        {{- entry.bibtex | hideCustomBibtex -}}
+        {% endhighlight %}
+      </div>
+    {% endif %}
   </div>
 
-  {% assign proceedings = 'inproceedings,incollection' | split: ',' %}
-  {% assign thesis = 'thesis,mastersthesis,phdthesis' | split: ',' %}
-  {% capture venue %}
-    {% if entry.type == 'article' %}
-      {{ entry.journal }}
-    {% elsif proceedings contains entry.type %}
-      {{ entry.booktitle }}
-    {% elsif thesis contains entry.type %}
-      {{ entry.school }}
-    {% elsif entry.howpublished %}
-      {{ entry.howpublished }}
-    {% endif %}
-  {% endcapture %}
-  {% assign venue = venue | strip %}
-  {% if venue != blank or entry.year %}
-    <div class="publication-venue">
-      {% if venue != blank %}<em>{{ venue }}</em>{% endif %}{% if venue != blank and entry.year %}, {% endif %}{{ entry.year }}
-    </div>
-  {% endif %}
-
-  {% if entry.note %}
-    <div class="publication-note">{{ entry.note }}</div>
-  {% endif %}
-
-  {% if entry.code or entry.doi or entry.pdf or entry.bibtex_show %}
-    <div class="publication-links">
-      {% if entry.code %}
-        {% if entry.code contains '://' %}
-          <a href="{{ entry.code }}">GitHub</a>
-        {% else %}
-          <a href="{{ entry.code | prepend: '/assets/pdf/' | relative_url }}">Code</a>
-        {% endif %}
-      {% endif %}
-      {% if entry.doi %}
-        <a href="https://doi.org/{{ entry.doi }}">DOI</a>
-      {% endif %}
-      {% if entry.pdf %}
-        {% if entry.pdf contains '://' %}
-          <a href="{{ entry.pdf }}">PDF</a>
-        {% else %}
-          <a href="{{ entry.pdf | prepend: '/assets/pdf/' | relative_url }}">PDF</a>
-        {% endif %}
-      {% endif %}
-      {% if entry.bibtex_show %}
-        <a class="bibtex" role="button">BibTeX</a>
-      {% endif %}
-    </div>
-  {% endif %}
-
-  {% if entry.bibtex_show %}
-    <div class="bibtex hidden">
-      {% highlight bibtex %}
-      {{- entry.bibtex | hideCustomBibtex -}}
-      {% endhighlight %}
-    </div>
-  {% endif %}
+  <div class="publication-year-side" aria-hidden="true">{{ entry.year }}</div>
 </div>
