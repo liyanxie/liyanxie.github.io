@@ -3,14 +3,16 @@ layout: default
 ---
 <div class="home-page">
   <section class="home-hero" aria-label="Profile summary">
-    <div class="home-photo">
+    <div class="home-photo" style="flex: 0 0 125px; width: 125px; max-width: 125px;">
       {% if page.profile.image %}
         {% assign profile_image_path = page.profile.image | prepend: 'assets/img/' %}
         <img
           src="{{ profile_image_path | relative_url | bust_file_cache }}"
           class="home-profile-image z-depth-1 rounded"
           alt="{{ page.profile.alt }}"
+          width="125"
           loading="eager"
+          style="display: block; width: 125px; max-width: 125px; height: auto;"
         >
       {% endif %}
     </div>

@@ -9,21 +9,21 @@
 .home-hero {
   display: flex;
   flex-flow: row nowrap;
-  gap: 1.85rem;
+  gap: 1.55rem;
   align-items: flex-start;
   margin-bottom: 1.35rem;
 }
 
 .home-photo {
-  flex: 0 0 170px;
-  width: 170px;
-  max-width: 170px;
+  flex: 0 0 125px;
+  width: 125px;
+  max-width: 125px;
 }
 
 .home-profile-image {
   display: block;
-  width: 170px;
-  max-width: 170px;
+  width: 125px;
+  max-width: 125px;
   height: auto;
   border-radius: 6px;
 }
@@ -50,13 +50,13 @@
 }
 
 .home-affiliations {
-  margin-bottom: 0.45rem;
+  margin-bottom: 0.35rem;
 }
 
 .home-affiliations p {
-  margin: 0.1rem 0;
+  margin: 0.03rem 0;
   font-size: 1.05rem;
-  line-height: 1.22;
+  line-height: 1.15;
 }
 
 .home-links {
