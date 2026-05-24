@@ -1,0 +1,44 @@
+---
+layout: default
+---
+<div class="home-page">
+  <section class="home-hero" aria-label="Profile summary">
+    <div class="home-photo">
+      {% if page.profile.image %}
+        {% assign profile_image_path = page.profile.image | prepend: 'assets/img/' %}
+        {% include figure.liquid loading="eager" path=profile_image_path class="img-fluid z-depth-1 rounded" alt=page.profile.alt cache_bust=true %}
+      {% endif %}
+    </div>
+
+    <div class="home-intro">
+      <h1>{{ page.name }}</h1>
+      <p class="home-title">{{ page.position }}</p>
+
+      <div class="home-affiliations">
+        {% for affiliation in page.affiliations %}
+          <p>
+            {% if affiliation.url %}
+              <a href="{{ affiliation.url }}">{{ affiliation.label }}</a>
+            {% else %}
+              {{ affiliation.label }}
+            {% endif %}
+          </p>
+        {% endfor %}
+      </div>
+
+      <div class="home-links" aria-label="Profile links">
+        {% if page.cv %}<a href="{{ page.cv | relative_url }}">CV</a>{% endif %}
+        {% if page.google_scholar %}<a href="{{ page.google_scholar }}">Google Scholar</a>{% endif %}
+        {% if page.linkedin %}<a href="{{ page.linkedin }}">LinkedIn</a>{% endif %}
+      </div>
+
+      {% if page.email %}
+        <p class="home-email">E-Mail: <span>{{ page.email }}</span></p>
+      {% endif %}
+    </div>
+  </section>
+
+  <article class="home-body">
+    {{ content }}
+  </article>
+</div>

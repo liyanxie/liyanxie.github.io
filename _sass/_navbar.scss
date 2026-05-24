@@ -160,12 +160,12 @@
   border: 0;
   background-color: inherit;
   color: var(--global-text-color);
-  /* Fix footprint to prevent navbar shifting when icon changes */
   width: 2rem;
   height: 2rem;
   display: inline-flex;
   align-items: center;
   justify-content: center;
+  font-size: 1.25rem;
 
   &:hover {
     color: var(--global-hover-color);
@@ -187,4 +187,16 @@
   &:hover {
     color: var(--global-hover-color);
   }
+}
+
+#light-toggle .theme-icon-sun {
+  display: none;
+}
+
+html[data-theme="dark"] #light-toggle .theme-icon-moon {
+  display: none;
+}
+
+html[data-theme="dark"] #light-toggle .theme-icon-sun {
+  display: inline-block;
 }
