@@ -5,7 +5,7 @@ permalink: /
 name: Liyan Xie
 position: Assistant Professor
 profile:
-  image: LiyanXie_2023.jpg
+  image: prof_pic.jpg
   alt: Liyan Xie
 affiliations:
   - label: Department of Industrial and Systems Engineering
