@@ -2,8 +2,8 @@
 layout: default
 ---
 <div class="home-page">
-  <section class="home-hero" aria-label="Profile summary">
-    <div class="home-photo">
+  <section class="home-hero d-flex flex-column flex-sm-row align-items-start" aria-label="Profile summary" style="gap: 1.75rem; margin-bottom: 2rem;">
+    <div class="home-photo flex-shrink-0" style="width: 125px; max-width: 125px;">
       {% if page.profile.image %}
         {% assign profile_image_path = page.profile.image | prepend: 'assets/img/' %}
         <img
@@ -13,12 +13,13 @@ layout: default
           width="125"
           height="auto"
           loading="eager"
+          style="display: block; width: 125px; max-width: 125px; height: auto;"
         >
       {% endif %}
     </div>
 
-    <div class="home-intro">
-      <h1>{{ page.name }}</h1>
+    <div class="home-intro flex-grow-1">
+      <h1>{{ page.display_name }}</h1>
       <p class="home-title">{{ page.position }}</p>
 
       <div class="home-affiliations">
@@ -34,9 +35,17 @@ layout: default
       </div>
 
       <div class="home-links" aria-label="Profile links">
-        {% if page.cv %}<a href="{{ page.cv | relative_url }}">CV</a>{% endif %}
-        {% if page.google_scholar %}<a href="{{ page.google_scholar }}">Google Scholar</a>{% endif %}
-        {% if page.linkedin %}<a href="{{ page.linkedin }}">LinkedIn</a>{% endif %}
+        {% if page.cv %}<a class="home-cv-link" href="{{ page.cv | relative_url }}">CV</a>{% endif %}
+        {% if page.google_scholar %}
+          <a class="home-icon-link" href="{{ page.google_scholar }}" aria-label="Google Scholar">
+            <i class="ai ai-google-scholar" aria-hidden="true"></i>
+          </a>
+        {% endif %}
+        {% if page.linkedin %}
+          <a class="home-icon-link" href="{{ page.linkedin }}" aria-label="LinkedIn">
+            <i class="fa-brands fa-linkedin" aria-hidden="true"></i>
+          </a>
+        {% endif %}
       </div>
 
       {% if page.email %}

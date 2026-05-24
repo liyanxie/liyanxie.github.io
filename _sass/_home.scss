@@ -7,10 +7,7 @@
 }
 
 .home-hero {
-  display: grid;
-  grid-template-columns: 125px minmax(0, 1fr);
   gap: 1.75rem;
-  align-items: start;
   margin-bottom: 2rem;
 }
 
@@ -55,7 +52,7 @@
 .home-links {
   display: flex;
   flex-wrap: wrap;
-  gap: 0.35rem 0.9rem;
+  gap: 0.35rem 0.85rem;
   align-items: center;
   margin: 1rem 0 0.45rem;
   font-size: 1.05rem;
@@ -63,6 +60,21 @@
 
 .home-links a {
   font-weight: 500;
+}
+
+.home-icon-link {
+  color: var(--global-text-color);
+  font-size: 1.55rem;
+  line-height: 1;
+}
+
+.home-icon-link:hover {
+  color: var(--global-theme-color);
+  text-decoration: none;
+}
+
+.home-cv-link {
+  margin-right: 0.15rem;
 }
 
 .home-email {
@@ -89,7 +101,6 @@
 
 @media (max-width: 575.98px) {
   .home-hero {
-    grid-template-columns: 1fr;
     gap: 1.2rem;
   }
 

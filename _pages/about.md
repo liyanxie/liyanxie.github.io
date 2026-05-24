@@ -2,7 +2,7 @@
 layout: home
 title: about
 permalink: /
-name: Liyan Xie
+display_name: Liyan Xie
 position: Assistant Professor
 profile:
   image: prof_pic.jpg
