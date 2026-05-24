@@ -32,8 +32,8 @@
   }
 
   ol.bibliography {
-    list-style: none;
-    padding: 0;
+    list-style: decimal;
+    padding-left: 2rem;
     margin-top: 0.35rem;
 
     li {
@@ -271,50 +271,45 @@
   text-decoration: none;
 }
 
+.publication-dynamic-list {
+  list-style: decimal;
+  margin: 0;
+  padding-left: 2rem;
+}
+
+.publication-dynamic-list > li {
+  margin: 0 0 1.15rem;
+}
+
 .publication-dynamic-view h2 {
   margin-top: 1.5rem;
 }
 
 .publication-year-group {
   border-top: 1px solid var(--global-divider-color);
-  display: grid;
-  grid-template-columns: minmax(0, 1fr) auto;
-  gap: 1.25rem;
-  margin-top: 1.75rem;
-  padding-top: 1.25rem;
-}
-
-.publication-year-group > .publication-dynamic-list {
-  grid-column: 1;
-  grid-row: 1;
-  margin-top: 0;
+  margin-top: 1.85rem;
+  padding: 1.35rem 6.2rem 0 0;
+  position: relative;
 }
 
 .publication-year-label {
   color: var(--global-text-color-light);
-  font-size: 1.9rem;
+  font-size: 2.55rem;
   font-weight: 300;
-  grid-column: 2;
-  grid-row: 1;
-  line-height: 1.05;
+  line-height: 1;
+  position: absolute;
+  right: 0;
   text-align: right;
+  top: 1.15rem;
 }
 
 @media (max-width: 575.98px) {
   .publication-year-group {
-    grid-template-columns: 1fr;
-    gap: 0.75rem;
-  }
-
-  .publication-year-group > .publication-dynamic-list,
-  .publication-year-label {
-    grid-column: 1;
-    grid-row: auto;
+    padding-right: 4.5rem;
   }
 
   .publication-year-label {
-    font-size: 1.45rem;
-    text-align: left;
+    font-size: 1.8rem;
   }
 }
 

@@ -67,8 +67,8 @@
       label.textContent = year;
 
       const list = makeList(yearEntries);
-      section.appendChild(label);
       section.appendChild(list);
+      section.appendChild(label);
       dynamicView.appendChild(section);
     });
   }
