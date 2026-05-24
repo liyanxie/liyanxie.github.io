@@ -54,6 +54,7 @@
 }
 
 .home-affiliations p {
+  color: var(--global-text-color);
   margin: 0;
   font-size: 1.05rem;
   line-height: 1.05;
@@ -73,6 +74,23 @@
   font-weight: 500;
 }
 
+.home-text-link {
+  border: 1px solid var(--global-text-color);
+  border-radius: 2px;
+  color: var(--global-text-color);
+  display: inline-block;
+  font-size: 0.85rem;
+  padding: 0.2rem 0.45rem;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.home-text-link:hover {
+  border-color: var(--global-theme-color);
+  color: var(--global-theme-color);
+  text-decoration: none;
+}
+
 .home-icon-link {
   color: var(--global-text-color);
   font-size: 1.25rem;
@@ -82,10 +100,6 @@
 .home-icon-link:hover {
   color: var(--global-theme-color);
   text-decoration: none;
-}
-
-.home-cv-link {
-  margin-right: 0.1rem;
 }
 
 .home-email {

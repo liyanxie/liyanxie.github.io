@@ -15,6 +15,7 @@ affiliations:
   - label: University of Minnesota
     url: https://twin-cities.umn.edu/
 cv: /assets/pdf/CV_LiyanXIE.pdf
+research_statement: /assets/pdf/xie-research-statement-2025.pdf
 google_scholar: https://scholar.google.com/citations?user=KtLwkBYAAAAJ&hl=en
 linkedin: https://www.linkedin.com/in/liyan-xie-48b21b103/
 email: liyanxie@umn.edu

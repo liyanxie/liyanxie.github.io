@@ -23,18 +23,15 @@ layout: default
 
       <div class="home-affiliations">
         {% for affiliation in page.affiliations %}
-          <p>
-            {% if affiliation.url %}
-              <a href="{{ affiliation.url }}">{{ affiliation.label }}</a>
-            {% else %}
-              {{ affiliation.label }}
-            {% endif %}
-          </p>
+          <p>{{ affiliation.label }}</p>
         {% endfor %}
       </div>
 
       <div class="home-links" aria-label="Profile links">
-        {% if page.cv %}<a class="home-cv-link" href="{{ page.cv | relative_url }}">CV</a>{% endif %}
+        {% if page.cv %}<a class="home-text-link" href="{{ page.cv | relative_url }}">CV</a>{% endif %}
+        {% if page.research_statement %}
+          <a class="home-text-link" href="{{ page.research_statement | relative_url }}">Research Statement (2-page)</a>
+        {% endif %}
         {% if page.google_scholar %}
           <a class="home-icon-link" href="{{ page.google_scholar }}" aria-label="Google Scholar">
             <i class="ai ai-google-scholar" aria-hidden="true"></i>
