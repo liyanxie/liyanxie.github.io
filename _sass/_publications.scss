@@ -5,7 +5,7 @@
 @use "variables" as v;
 
 .publications {
-  margin-top: 2rem;
+  margin-top: 0.5rem;
 
   h1 {
     color: var(--global-theme-color);
@@ -34,10 +34,10 @@
   ol.bibliography {
     list-style: none;
     padding: 0;
-    margin-top: 0;
+    margin-top: 0.35rem;
 
     li {
-      margin-bottom: 1rem;
+      margin-bottom: 1.05rem;
 
       .preview {
         display: inline-block;
@@ -180,6 +180,32 @@
       border-color: var(--global-highlight-color);
     }
   }
+}
+
+.publication-entry {
+  line-height: 1.45;
+}
+
+.publication-title {
+  font-weight: 500;
+}
+
+.publication-authors {
+  margin-top: 0.1rem;
+}
+
+.publication-venue,
+.publication-note {
+  color: var(--global-text-color-light);
+  margin-top: 0.1rem;
+}
+
+.publication-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  margin-top: 0.2rem;
+  font-size: 0.95rem;
 }
 
 .citation,
