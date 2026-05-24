@@ -218,9 +218,7 @@
 }
 
 .publication-entry {
-  display: flex;
-  gap: 1.25rem;
-  justify-content: space-between;
+  display: block;
   line-height: 1.45;
 }
 
@@ -229,7 +227,8 @@
 }
 
 .publication-title {
-  font-weight: 500;
+  color: var(--global-text-color);
+  font-weight: 600;
 }
 
 .publication-authors {
@@ -242,32 +241,80 @@
   margin-top: 0.1rem;
 }
 
+.publication-venue {
+  font-style: italic;
+}
+
 .publication-links {
   display: flex;
   flex-wrap: wrap;
-  gap: 0.75rem;
-  margin-top: 0.2rem;
-  font-size: 0.95rem;
+  gap: 0.35rem;
+  margin-top: 0.35rem;
+  font-size: 0.85rem;
+  line-height: 1.1;
 }
 
-.publication-year-side {
-  flex: 0 0 auto;
-  min-width: 4.3rem;
-  color: var(--global-text-color-light);
-  font-size: 2.15rem;
-  font-weight: 300;
-  line-height: 1.1;
-  text-align: right;
+.publication-links a {
+  border: 1px solid var(--global-text-color);
+  border-radius: 2px;
+  color: var(--global-text-color);
+  display: inline-block;
+  font-weight: 500;
+  padding: 0.2rem 0.45rem;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.publication-links a:hover {
+  border-color: var(--global-theme-color);
+  color: var(--global-theme-color);
+  text-decoration: none;
 }
 
 .publication-dynamic-view h2 {
   margin-top: 1.5rem;
 }
 
+.publication-year-group {
+  border-top: 1px solid var(--global-divider-color);
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  gap: 1.25rem;
+  margin-top: 1.75rem;
+  padding-top: 1.25rem;
+}
+
+.publication-year-group > .publication-dynamic-list {
+  grid-column: 1;
+  grid-row: 1;
+  margin-top: 0;
+}
+
+.publication-year-label {
+  color: var(--global-text-color-light);
+  font-size: 1.9rem;
+  font-weight: 300;
+  grid-column: 2;
+  grid-row: 1;
+  line-height: 1.05;
+  text-align: right;
+}
+
 @media (max-width: 575.98px) {
-  .publication-year-side {
-    min-width: 3.2rem;
+  .publication-year-group {
+    grid-template-columns: 1fr;
+    gap: 0.75rem;
+  }
+
+  .publication-year-group > .publication-dynamic-list,
+  .publication-year-label {
+    grid-column: 1;
+    grid-row: auto;
+  }
+
+  .publication-year-label {
     font-size: 1.45rem;
+    text-align: left;
   }
 }
 

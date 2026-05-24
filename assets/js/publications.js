@@ -13,7 +13,23 @@
     topic: entry.dataset.topic || "other",
   }));
 
-  const topics = Array.from(new Set(entries.map((entry) => entry.topic))).sort((a, b) => a.localeCompare(b));
+  const topicCounts = entries.reduce((counts, entry) => {
+    counts.set(entry.topic, (counts.get(entry.topic) || 0) + 1);
+    return counts;
+  }, new Map());
+  const preferredTopicOrder = ["change detection", "generative models"];
+  const topics = Array.from(topicCounts.keys()).sort((a, b) => {
+    const preferredA = preferredTopicOrder.indexOf(a);
+    const preferredB = preferredTopicOrder.indexOf(b);
+
+    if (preferredA !== -1 || preferredB !== -1) {
+      if (preferredA === -1) return 1;
+      if (preferredB === -1) return -1;
+      return preferredA - preferredB;
+    }
+
+    return topicCounts.get(b) - topicCounts.get(a) || a.localeCompare(b);
+  });
   const selectedTopics = new Set(topics);
 
   function sortByYearThenOriginal(a, b) {
@@ -35,7 +51,26 @@
 
   function renderYearView() {
     dynamicView.innerHTML = "";
-    dynamicView.appendChild(makeList([...entries].sort(sortByYearThenOriginal)));
+
+    const entriesByYear = new Map();
+    [...entries].sort(sortByYearThenOriginal).forEach((entry) => {
+      if (!entriesByYear.has(entry.year)) entriesByYear.set(entry.year, []);
+      entriesByYear.get(entry.year).push(entry);
+    });
+
+    entriesByYear.forEach((yearEntries, year) => {
+      const section = document.createElement("section");
+      section.className = "publication-year-group";
+
+      const label = document.createElement("div");
+      label.className = "publication-year-label";
+      label.textContent = year;
+
+      const list = makeList(yearEntries);
+      section.appendChild(label);
+      section.appendChild(list);
+      dynamicView.appendChild(section);
+    });
   }
 
   function renderTopicView() {

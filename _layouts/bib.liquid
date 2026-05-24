@@ -1,11 +1,14 @@
 ---
 ---
-{% assign title_url = entry.html %}
-{% if title_url == blank %}
-  {% assign title_url = entry.url %}
+{% assign paper_url = entry.pdf %}
+{% if paper_url == blank %}
+  {% assign paper_url = entry.html %}
 {% endif %}
-{% if title_url == blank %}
-  {% assign title_url = entry.pdf %}
+{% if paper_url == blank %}
+  {% assign paper_url = entry.url %}
+{% endif %}
+{% if paper_url contains 'arxiv.org/abs/' %}
+  {% assign paper_url = paper_url | replace: '/abs/', '/pdf/' %}
 {% endif %}
 
 <div
@@ -17,11 +20,7 @@
 >
   <div class="publication-main">
     <div class="publication-title">
-      {% if title_url %}
-        <a href="{{ title_url }}">{{ entry.title }}</a>
-      {% else %}
-        {{ entry.title }}
-      {% endif %}
+      {{ entry.title }}
     </div>
 
     <div class="publication-authors">
@@ -46,7 +45,9 @@
     {% assign proceedings = 'inproceedings,incollection' | split: ',' %}
     {% assign thesis = 'thesis,mastersthesis,phdthesis' | split: ',' %}
     {% capture venue %}
-      {% if entry.type == 'article' %}
+      {% if entry.category == 'preprint' %}
+        preprint
+      {% elsif entry.type == 'article' %}
         {{ entry.journal }}
       {% elsif proceedings contains entry.type %}
         {{ entry.booktitle }}
@@ -67,24 +68,28 @@
       <div class="publication-note">{{ entry.note }}</div>
     {% endif %}
 
-    {% if entry.code or entry.doi or entry.pdf or entry.bibtex_show %}
+    {% if paper_url or entry.code or entry.doi or entry.bibtex_show %}
       <div class="publication-links">
+        {% if paper_url %}
+          {% if paper_url contains '://' %}
+            <a href="{{ paper_url }}">PDF</a>
+          {% else %}
+            <a href="{{ paper_url | prepend: '/assets/pdf/' | relative_url }}">PDF</a>
+          {% endif %}
+        {% endif %}
         {% if entry.code %}
           {% if entry.code contains '://' %}
-            <a href="{{ entry.code }}">GitHub</a>
+            {% if entry.code contains 'github.com' %}
+              <a href="{{ entry.code }}">GitHub</a>
+            {% else %}
+              <a href="{{ entry.code }}">Code</a>
+            {% endif %}
           {% else %}
             <a href="{{ entry.code | prepend: '/assets/pdf/' | relative_url }}">Code</a>
           {% endif %}
         {% endif %}
         {% if entry.doi %}
           <a href="https://doi.org/{{ entry.doi }}">DOI</a>
-        {% endif %}
-        {% if entry.pdf %}
-          {% if entry.pdf contains '://' %}
-            <a href="{{ entry.pdf }}">PDF</a>
-          {% else %}
-            <a href="{{ entry.pdf | prepend: '/assets/pdf/' | relative_url }}">PDF</a>
-          {% endif %}
         {% endif %}
         {% if entry.bibtex_show %}
           <a class="bibtex" role="button">BibTeX</a>
@@ -100,6 +105,4 @@
       </div>
     {% endif %}
   </div>
-
-  <div class="publication-year-side" aria-hidden="true">{{ entry.year }}</div>
 </div>
