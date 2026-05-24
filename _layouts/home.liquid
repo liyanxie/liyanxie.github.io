@@ -6,7 +6,14 @@ layout: default
     <div class="home-photo">
       {% if page.profile.image %}
         {% assign profile_image_path = page.profile.image | prepend: 'assets/img/' %}
-        {% include figure.liquid loading="eager" path=profile_image_path class="img-fluid z-depth-1 rounded" alt=page.profile.alt cache_bust=true %}
+        <img
+          src="{{ profile_image_path | relative_url | bust_file_cache }}"
+          class="home-profile-image z-depth-1 rounded"
+          alt="{{ page.profile.alt }}"
+          width="125"
+          height="auto"
+          loading="eager"
+        >
       {% endif %}
     </div>
 
