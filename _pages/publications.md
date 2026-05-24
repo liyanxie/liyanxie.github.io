@@ -4,6 +4,7 @@ permalink: /publications/
 title: publications
 nav: true
 nav_order: 2
+hide_title: true
 ---
 
 <div class="publication-controls" aria-label="Publication view controls">

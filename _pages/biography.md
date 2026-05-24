@@ -4,6 +4,7 @@ permalink: /biography/
 title: biography
 nav: true
 nav_order: 1
+hide_title: true
 ---
 
 ## Education

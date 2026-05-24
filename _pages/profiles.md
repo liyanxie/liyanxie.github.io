@@ -4,6 +4,7 @@ permalink: /people/
 title: people
 nav: true
 nav_order: 4
+hide_title: true
 ---
 
 ## Ph.D. Students
