@@ -24,7 +24,7 @@ nav: false
 
 I am an Assistant Professor in the [Department of Industrial and Systems Engineering](https://cse.umn.edu/isye) at the [University of Minnesota](https://twin-cities.umn.edu/), affiliated with the [CSE Data Science Initiative](https://cse.umn.edu/dsi). My research lies at the interface of statistics, optimization, and machine learning, inspired by engineering applications.
 
-**Previously**: I was an Assistant Professor in the [School of Data Science](https://sds.cuhk.edu.cn/en) at [The Chinese University of Hong Kong, Shenzhen](https://www.cuhk.edu.cn/en). I received my Ph.D. in Industrial Engineering from [Georgia Institute of Technology](https://www.gatech.edu) in 2021, and my B.S. in Statistics from the [University of Science and Technology of China](https://en.ustc.edu.cn) in 2016.
+**Previously**: I was an Assistant Professor in the [School of Data Science](https://sds.cuhk.edu.cn/en) at [The Chinese University of Hong Kong, Shenzhen](https://www.cuhk.edu.cn/en). I received my Ph.D. in Industrial Engineering from [Georgia Institute of Technology](https://www.gatech.edu), and my B.S. in Statistics from the [University of Science and Technology of China](https://en.ustc.edu.cn) in 2016.
 
 *I am actively looking for Ph.D. students to join my research group in Fall 2025 or 2026. Please send me an email with your CV and transcript if you are interested.*
 
@@ -34,7 +34,18 @@ I am an Assistant Professor in the [Department of Industrial and Systems Enginee
 - **Statistical Inference:** time series analysis, sequential hypothesis testing and change detection.
 - **Applications:** healthcare, including wearable sensors and electronic health record data; spatio-temporal data analysis; community detection; and manufacturing quality control.
 
-## Teaching
+## Currently Teaching
 
 - [IE3521: Statistics, Quality, and Reliability](https://umtc.catalog.prod.coursedog.com/courses/0055321). Fall 2024, Fall 2025.
 - [IE5533: Operations Research for Data Science](https://umtc.catalog.prod.coursedog.com/courses/8194611). Spring 2025, Spring 2026.
+
+## Selected Publications [[full list](/publications/)]
+
+- [Discrete Guidance Matching: Exact Guidance for Discrete Flow Matching](https://arxiv.org/abs/2509.21912). ICLR, 2026.
+- [Sequential Change Detection with Differential Privacy](https://arxiv.org/abs/2509.02768). IEEE Transactions on Information Theory, 2025. [(Code)](/assets/pdf/Private_cusum_code.zip)
+- [Transfer Learning for Diffusion Models](http://arxiv.org/abs/2405.16876). NeurIPS, 2024. [(GitHub)](https://github.com/YiDongOuYang/Transfer-Learning-for-Diffusion-Models)
+- [Window-Limited CUSUM for Sequential Change Detection](https://arxiv.org/pdf/2206.06777.pdf). IEEE Transactions on Information Theory, 2023.
+- [MissDiff: Training Diffusion Models on Tabular Data with Missing Values](https://arxiv.org/abs/2307.00467). preprint, 2023. [(GitHub)](https://github.com/YiDongOuYang/MissDiff)
+- [Sequential Change Detection: Classical Results and New Directions](https://arxiv.org/pdf/2104.04186.pdf). IEEE Journal on Selected Areas in Information Theory, 2021. Survey paper.
+- [Sequential Subspace Change-Point Detection](https://arxiv.org/abs/1811.03936). Sequential Analysis, 2020.
+- [Robust hypothesis testing using Wasserstein uncertainty sets](http://papers.nips.cc/paper/8015-robust-hypothesis-testing-using-wasserstein-uncertainty-sets). NeurIPS, 2018. Spotlight.
