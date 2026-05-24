@@ -1,6 +1,6 @@
 ---
 layout: home
-title: about
+title: home
 permalink: /
 display_name: Liyan Xie
 position: Assistant Professor
