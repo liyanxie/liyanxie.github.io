@@ -35,7 +35,7 @@
 }
 
 .home-intro h1 {
-  margin: -0.15rem 0 0.35rem;
+  margin: -0.15rem 0 0.15rem;
   font-size: 1.25rem;
   font-weight: 300;
   line-height: 1.1;
@@ -43,9 +43,9 @@
 }
 
 .home-title {
-  margin: 0 0 0.4rem;
+  margin: 0;
   font-size: 1.05rem;
-  font-weight: 300;
+  font-weight: 400;
   line-height: 1.05;
 }
 
@@ -57,6 +57,7 @@
   color: var(--global-text-color);
   margin: 0;
   font-size: 1.05rem;
+  font-weight: 400;
   line-height: 1.05;
 }
 
@@ -80,6 +81,7 @@
   color: var(--global-text-color);
   display: inline-block;
   font-size: 0.85rem;
+  font-weight: 400;
   padding: 0.2rem 0.45rem;
   text-decoration: none;
   text-transform: uppercase;

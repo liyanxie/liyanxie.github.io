@@ -22,7 +22,7 @@ email: liyanxie@umn.edu
 nav: false
 ---
 
-I am an Assistant Professor in the [Department of Industrial and Systems Engineering](https://cse.umn.edu/isye) at the [University of Minnesota](https://twin-cities.umn.edu/), affiliated with the [CSE Data Science Initiative](https://cse.umn.edu/dsi). My research lies at the interface of statistics, optimization, and machine learning, inspired by important applications.
+I am an Assistant Professor in the [Department of Industrial and Systems Engineering](https://cse.umn.edu/isye) at the [University of Minnesota](https://twin-cities.umn.edu/), affiliated with the [CSE Data Science Initiative](https://cse.umn.edu/dsi). My research lies at the interface of statistics, optimization, and machine learning, inspired by engineering applications.
 
 **Previously**: I was an Assistant Professor in the [School of Data Science](https://sds.cuhk.edu.cn/en) at [The Chinese University of Hong Kong, Shenzhen](https://www.cuhk.edu.cn/en). I received my Ph.D. in Industrial Engineering from [Georgia Institute of Technology](https://www.gatech.edu), advised by [Yao Xie](https://www2.isye.gatech.edu/~yxie77/), and my B.S. in Statistics from the [University of Science and Technology of China](https://en.ustc.edu.cn).
 
