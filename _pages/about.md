@@ -42,7 +42,7 @@ I am an Assistant Professor in the [Department of Industrial and Systems Enginee
 ## Selected Publications [[full list](/publications/)]
 
 - [Discrete Guidance Matching: Exact Guidance for Discrete Flow Matching](https://arxiv.org/abs/2509.21912). Zhengyan Wan, Yidong Ouyang, Liyan Xie, Fang Fang, Hongyuan Zha, and Guang Cheng. ICLR, 2026.
-- [Sequential Change Detection with Differential Privacy](https://arxiv.org/abs/2509.02768). Liyan Xie and Ruizhi Zhang. IEEE Transactions on Information Theory, 2025. [(Code)](/assets/pdf/Private_cusum_code.zip)
+- [Sequential Change Detection with Differential Privacy](https://arxiv.org/abs/2509.02768). Liyan Xie and Ruizhi Zhang. IEEE Transactions on Information Theory, 2025. [(Code)](/assets/pdf/Private_cusum_code.zip) [(Slides)](/assets/pdf/IWSM2026.pdf)
 - [Transfer Learning for Diffusion Models](http://arxiv.org/abs/2405.16876). Yidong Ouyang, Liyan Xie, Hongyuan Zha, and Guang Cheng. NeurIPS, 2024. [(GitHub)](https://github.com/YiDongOuYang/Transfer-Learning-for-Diffusion-Models)
 - [Window-Limited CUSUM for Sequential Change Detection](https://arxiv.org/pdf/2206.06777.pdf). Liyan Xie, George V. Moustakides, and Yao Xie. IEEE Transactions on Information Theory, 2023.
 - [MissDiff: Training Diffusion Models on Tabular Data with Missing Values](https://arxiv.org/abs/2307.00467). Yidong Ouyang, Liyan Xie, Chongxuan Li, and Guang Cheng. preprint, 2023. [(GitHub)](https://github.com/YiDongOuYang/MissDiff)

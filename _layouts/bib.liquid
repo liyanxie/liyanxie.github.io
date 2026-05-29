@@ -31,6 +31,14 @@
     {% assign code_label = 'Code' %}
   {% endif %}
 {% endif %}
+{% assign slides_href = '' %}
+{% if entry.slides %}
+  {% if entry.slides contains '://' %}
+    {% assign slides_href = entry.slides %}
+  {% else %}
+    {% assign slides_href = entry.slides | prepend: '/assets/pdf/' | relative_url %}
+  {% endif %}
+{% endif %}
 
 <div
   id="{{ entry.key }}"
@@ -48,6 +56,9 @@
       {% endif %}
       {% if code_href != blank %}
         <a class="publication-title-extra" href="{{ code_href }}">({{ code_label }})</a>
+      {% endif %}
+      {% if slides_href != blank %}
+        <a class="publication-title-extra" href="{{ slides_href }}">(Slides)</a>
       {% endif %}
     </div>
 
