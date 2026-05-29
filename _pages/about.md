@@ -41,11 +41,11 @@ I am an Assistant Professor in the [Department of Industrial and Systems Enginee
 
 ## Selected Publications [[full list](/publications/)]
 
-- [Discrete Guidance Matching: Exact Guidance for Discrete Flow Matching](https://arxiv.org/abs/2509.21912). Zhengyan Wan, Yidong Ouyang, Liyan Xie, Fang Fang, Hongyuan Zha, and Guang Cheng. ICLR, 2026.
+- [Discrete Guidance Matching: Exact Guidance for Discrete Flow Matching](https://arxiv.org/abs/2509.21912). Zhengyan Wan, Yidong Ouyang, Liyan Xie, Fang Fang, Hongyuan Zha, and Guang Cheng. ICLR, 2026. [(Slides)](/assets/pdf/Discrete-Guidance.pdf)
 - [Sequential Change Detection with Differential Privacy](https://arxiv.org/abs/2509.02768). Liyan Xie and Ruizhi Zhang. IEEE Transactions on Information Theory, 2025. [(Code)](/assets/pdf/Private_cusum_code.zip) [(Slides)](/assets/pdf/IWSM2026.pdf)
-- [Transfer Learning for Diffusion Models](http://arxiv.org/abs/2405.16876). Yidong Ouyang, Liyan Xie, Hongyuan Zha, and Guang Cheng. NeurIPS, 2024. [(GitHub)](https://github.com/YiDongOuYang/Transfer-Learning-for-Diffusion-Models)
-- [Window-Limited CUSUM for Sequential Change Detection](https://arxiv.org/pdf/2206.06777.pdf). Liyan Xie, George V. Moustakides, and Yao Xie. IEEE Transactions on Information Theory, 2023.
-- [MissDiff: Training Diffusion Models on Tabular Data with Missing Values](https://arxiv.org/abs/2307.00467). Yidong Ouyang, Liyan Xie, Chongxuan Li, and Guang Cheng. preprint, 2023. [(GitHub)](https://github.com/YiDongOuYang/MissDiff)
+- [Transfer Learning for Diffusion Models](http://arxiv.org/abs/2405.16876). Yidong Ouyang, Liyan Xie, Hongyuan Zha, and Guang Cheng. NeurIPS, 2024. [(GitHub)](https://github.com/YiDongOuYang/Transfer-Learning-for-Diffusion-Models) [(Slides)](/assets/pdf/TGDP.pdf)
+- [Window-Limited CUSUM for Sequential Change Detection](https://arxiv.org/pdf/2206.06777.pdf). Liyan Xie, George V. Moustakides, and Yao Xie. IEEE Transactions on Information Theory, 2023. [(Slides)](/assets/pdf/WLCUSUM-LiyanXIE-CUNY2023.pdf)
+- [MissDiff: Training Diffusion Models on Tabular Data with Missing Values](https://arxiv.org/abs/2307.00467). Yidong Ouyang, Liyan Xie, Chongxuan Li, and Guang Cheng. preprint, 2023. [(GitHub)](https://github.com/YiDongOuYang/MissDiff) [(Slides)](/assets/pdf/missdiff.pdf)
 - [Sequential Change Detection: Classical Results and New Directions](https://arxiv.org/pdf/2104.04186.pdf). Liyan Xie, Shaofeng Zou, Yao Xie, and Venugopal V. Veeravalli. IEEE Journal on Selected Areas in Information Theory, 2021. Survey paper.
 - [Sequential Subspace Change-Point Detection](https://arxiv.org/abs/1811.03936). Liyan Xie, Yao Xie, and George V. Moustakides. Sequential Analysis, 2020.
 - [Robust hypothesis testing using Wasserstein uncertainty sets](http://papers.nips.cc/paper/8015-robust-hypothesis-testing-using-wasserstein-uncertainty-sets). Rui Gao, Liyan Xie, Yao Xie, and Huan Xu. NeurIPS, 2018. Spotlight.
