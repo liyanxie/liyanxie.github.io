@@ -39,6 +39,14 @@
     {% assign slides_href = entry.slides | prepend: '/assets/pdf/' | relative_url %}
   {% endif %}
 {% endif %}
+{% assign poster_href = '' %}
+{% if entry.poster %}
+  {% if entry.poster contains '://' %}
+    {% assign poster_href = entry.poster %}
+  {% else %}
+    {% assign poster_href = entry.poster | prepend: '/assets/pdf/' | relative_url %}
+  {% endif %}
+{% endif %}
 
 <div
   id="{{ entry.key }}"
@@ -59,6 +67,9 @@
       {% endif %}
       {% if slides_href != blank %}
         <a class="publication-title-extra" href="{{ slides_href }}">(Slides)</a>
+      {% endif %}
+      {% if poster_href != blank %}
+        <a class="publication-title-extra" href="{{ poster_href }}">(Poster)</a>
       {% endif %}
     </div>
 
