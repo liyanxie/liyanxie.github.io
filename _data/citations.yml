@@ -1,5 +1,5 @@
 metadata:
-  last_updated: '2026-06-12'
+  last_updated: '2026-06-26'
 papers:
   KtLwkBYAAAAJ:0EnyYjriUFMC:
     citations: 4
@@ -10,7 +10,7 @@ papers:
     title: Early detection of COVID-19 hotspots using spatio-temporal data
     year: '2022'
   KtLwkBYAAAAJ:4DMP91E08xMC:
-    citations: 11
+    citations: 13
     title: 'Percept: a new online change-point detection method using topological data analysis'
     year: '2023'
   KtLwkBYAAAAJ:4JMBOYKVnBMC:
@@ -22,11 +22,11 @@ papers:
     title: Distributionally robust weighted k-nearest neighbors
     year: '2022'
   KtLwkBYAAAAJ:7PzlFSSx8tAC:
-    citations: 24
+    citations: 25
     title: Spectral CUSUM for online network structure change detection
     year: '2023'
   KtLwkBYAAAAJ:8k81kl-MbHgC:
-    citations: 212
+    citations: 214
     title: 'Sequential (quickest) change detection: Classical results and new directions'
     year: '2021'
   KtLwkBYAAAAJ:9yKSN-GCB0IC:
@@ -63,14 +63,14 @@ papers:
     year: '2020'
   KtLwkBYAAAAJ:M3NEmzRMIkIC:
     citations: 2
-    title: Corrected Samplers for Discrete Flow Models
+    title: Corrected samplers for discrete flow models
     year: '2026'
   KtLwkBYAAAAJ:O3NaXMp0MMsC:
     citations: 0
     title: 'HawkesLLM: Semantic Uncertainty Propagation in Agentic Text Simulation'
     year: '2026'
   KtLwkBYAAAAJ:QIV2ME_5wuYC:
-    citations: 60
+    citations: 61
     title: Window-limited CUSUM for sequential change detection
     year: '2023'
   KtLwkBYAAAAJ:RGFaLdJalmkC:
@@ -146,7 +146,7 @@ papers:
     title: Score-Based Change-Point Detection and Region Localization for Spatio-Temporal Point Processes
     year: '2026'
   KtLwkBYAAAAJ:e5wmG9Sq2KIC:
-    citations: 18
+    citations: 19
     title: Transfer learning for diffusion models
     year: '2024'
   KtLwkBYAAAAJ:eQOLeE2rZwMC:
