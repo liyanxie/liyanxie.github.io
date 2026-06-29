@@ -1,5 +1,5 @@
 metadata:
-  last_updated: '2026-06-26'
+  last_updated: '2026-06-29'
 papers:
   KtLwkBYAAAAJ:0EnyYjriUFMC:
     citations: 4
@@ -42,7 +42,7 @@ papers:
     title: Sequential Change Detection for Multiple Data Streams with Differential Privacy
     year: '2026'
   KtLwkBYAAAAJ:HDshCWvjkbEC:
-    citations: 0
+    citations: 1
     title: Sequential Wasserstein Uncertainty Sets for Minimax Robust Online Change Detection
     year: '2024'
   KtLwkBYAAAAJ:JV2RwH3_ST0C:
@@ -126,7 +126,7 @@ papers:
     title: Sequential subspace change point detection
     year: '2020'
   KtLwkBYAAAAJ:ZeXyd9-uunAC:
-    citations: 18
+    citations: 19
     title: Improving adversarial robustness through the contrastive-guided diffusion process
     year: '2023'
   KtLwkBYAAAAJ:_Qo2XoVZTnwC:
@@ -186,11 +186,11 @@ papers:
     title: Error analysis of discrete flow with generator matching
     year: '2025'
   KtLwkBYAAAAJ:mVmsd5A6BfQC:
-    citations: 6
+    citations: 7
     title: Minimax robust quickest change detection using wasserstein ambiguity sets
     year: '2022'
   KtLwkBYAAAAJ:maZDTaKrznsC:
-    citations: 1
+    citations: 2
     title: Alignment of Diffusion Model and Flow Matching for Text-to-Image Generation
     year: '2026'
   KtLwkBYAAAAJ:ns9cj8rnVeAC:
