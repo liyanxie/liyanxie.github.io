@@ -1,5 +1,5 @@
 metadata:
-  last_updated: '2026-06-29'
+  last_updated: '2026-07-08'
 papers:
   KtLwkBYAAAAJ:0EnyYjriUFMC:
     citations: 4
@@ -26,7 +26,7 @@ papers:
     title: Spectral CUSUM for online network structure change detection
     year: '2023'
   KtLwkBYAAAAJ:8k81kl-MbHgC:
-    citations: 214
+    citations: 216
     title: 'Sequential (quickest) change detection: Classical results and new directions'
     year: '2021'
   KtLwkBYAAAAJ:9yKSN-GCB0IC:
@@ -54,7 +54,7 @@ papers:
     title: Robust Statistical Inference Through the Lens of Optimization
     year: '2021'
   KtLwkBYAAAAJ:L8Ckcad2t8MC:
-    citations: 15
+    citations: 16
     title: Neural differential recurrent neural network with adaptive time steps
     year: '2023'
   KtLwkBYAAAAJ:LkGwnXOMwfcC:
@@ -70,7 +70,7 @@ papers:
     title: 'HawkesLLM: Semantic Uncertainty Propagation in Agentic Text Simulation'
     year: '2026'
   KtLwkBYAAAAJ:QIV2ME_5wuYC:
-    citations: 61
+    citations: 63
     title: Window-limited CUSUM for sequential change detection
     year: '2023'
   KtLwkBYAAAAJ:RGFaLdJalmkC:
@@ -146,7 +146,7 @@ papers:
     title: Score-Based Change-Point Detection and Region Localization for Spatio-Temporal Point Processes
     year: '2026'
   KtLwkBYAAAAJ:e5wmG9Sq2KIC:
-    citations: 19
+    citations: 20
     title: Transfer learning for diffusion models
     year: '2024'
   KtLwkBYAAAAJ:eQOLeE2rZwMC:
@@ -206,6 +206,6 @@ papers:
     title: Sequential detection of low-rank changes using extreme eigenvalues
     year: '2017'
   KtLwkBYAAAAJ:roLk4NBRz8UC:
-    citations: 32
+    citations: 33
     title: High-resolution spatio-temporal model for county-level COVID-19 activity in the US
     year: '2021'
