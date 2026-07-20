@@ -1,16 +1,16 @@
 metadata:
-  last_updated: '2026-07-08'
+  last_updated: '2026-07-20'
 papers:
   KtLwkBYAAAAJ:0EnyYjriUFMC:
     citations: 4
     title: Optimality of graph scanning statistic for online community detection
     year: '2021'
   KtLwkBYAAAAJ:3fE2CSJIrl8C:
-    citations: 23
+    citations: 24
     title: Early detection of COVID-19 hotspots using spatio-temporal data
     year: '2022'
   KtLwkBYAAAAJ:4DMP91E08xMC:
-    citations: 13
+    citations: 14
     title: 'Percept: a new online change-point detection method using topological data analysis'
     year: '2023'
   KtLwkBYAAAAJ:4JMBOYKVnBMC:
@@ -70,7 +70,7 @@ papers:
     title: 'HawkesLLM: Semantic Uncertainty Propagation in Agentic Text Simulation'
     year: '2026'
   KtLwkBYAAAAJ:QIV2ME_5wuYC:
-    citations: 63
+    citations: 65
     title: Window-limited CUSUM for sequential change detection
     year: '2023'
   KtLwkBYAAAAJ:RGFaLdJalmkC:
@@ -86,7 +86,7 @@ papers:
     title: "Sequential Change Detection by Optimal Weighted \u2113\u2082 Divergence"
     year: '2021'
   KtLwkBYAAAAJ:TFP_iSt0sucC:
-    citations: 0
+    citations: 1
     title: Detecting Post-generation Edits to Watermarked LLM Outputs via Combinatorial Watermarking
     year: '2025'
   KtLwkBYAAAAJ:Tyk-4Ss8FVUC:
@@ -126,7 +126,7 @@ papers:
     title: Sequential subspace change point detection
     year: '2020'
   KtLwkBYAAAAJ:ZeXyd9-uunAC:
-    citations: 19
+    citations: 20
     title: Improving adversarial robustness through the contrastive-guided diffusion process
     year: '2023'
   KtLwkBYAAAAJ:_Qo2XoVZTnwC:
@@ -146,7 +146,7 @@ papers:
     title: Score-Based Change-Point Detection and Region Localization for Spatio-Temporal Point Processes
     year: '2026'
   KtLwkBYAAAAJ:e5wmG9Sq2KIC:
-    citations: 20
+    citations: 21
     title: Transfer learning for diffusion models
     year: '2024'
   KtLwkBYAAAAJ:eQOLeE2rZwMC:
@@ -182,7 +182,7 @@ papers:
     title: Robust hypothesis testing with Wasserstein uncertainty sets
     year: '2021'
   KtLwkBYAAAAJ:k_IJM867U9cC:
-    citations: 4
+    citations: 5
     title: Error analysis of discrete flow with generator matching
     year: '2025'
   KtLwkBYAAAAJ:mVmsd5A6BfQC:
@@ -198,7 +198,7 @@ papers:
     title: Masked Diffusion Modeling for Anomaly Detection
     year: '2026'
   KtLwkBYAAAAJ:qUcmZB5y_30C:
-    citations: 67
+    citations: 68
     title: 'Missdiff: Training diffusion models on tabular data with missing values'
     year: '2023'
   KtLwkBYAAAAJ:qjMakFHDy7sC:
