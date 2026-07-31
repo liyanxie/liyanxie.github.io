@@ -1,5 +1,5 @@
 metadata:
-  last_updated: '2026-07-22'
+  last_updated: '2026-07-31'
 papers:
   KtLwkBYAAAAJ:0EnyYjriUFMC:
     citations: 4
@@ -70,7 +70,7 @@ papers:
     title: 'HawkesLLM: Semantic Uncertainty Propagation in Agentic Text Simulation'
     year: '2026'
   KtLwkBYAAAAJ:QIV2ME_5wuYC:
-    citations: 65
+    citations: 67
     title: Window-limited CUSUM for sequential change detection
     year: '2023'
   KtLwkBYAAAAJ:RGFaLdJalmkC:
@@ -150,7 +150,7 @@ papers:
     title: Transfer learning for diffusion models
     year: '2024'
   KtLwkBYAAAAJ:eQOLeE2rZwMC:
-    citations: 22
+    citations: 23
     title: Asynchronous multi-sensor change-point detection for seismic tremors
     year: '2019'
   KtLwkBYAAAAJ:hC7cP41nSMkC:
@@ -162,7 +162,7 @@ papers:
     title: 'eRPCA: Robust Principal Component Analysis for Exponential Family Distributions'
     year: '2024'
   KtLwkBYAAAAJ:hqOjcs7Dif8C:
-    citations: 21
+    citations: 20
     title: Sequential change-point detection for mutually exciting point processes
     year: '2023'
   KtLwkBYAAAAJ:iH-uZ7U-co4C:
@@ -170,7 +170,7 @@ papers:
     title: 'Differentially private online community detection for censored block models: Algorithms and fundamental limits'
     year: '2025'
   KtLwkBYAAAAJ:isC4tDSrTZIC:
-    citations: 4
+    citations: 5
     title: 'Discrete guidance matching: Exact guidance for discrete flow matching'
     year: '2025'
   KtLwkBYAAAAJ:j3f4tGmQtD8C:
@@ -198,7 +198,7 @@ papers:
     title: Masked Diffusion Modeling for Anomaly Detection
     year: '2026'
   KtLwkBYAAAAJ:qUcmZB5y_30C:
-    citations: 69
+    citations: 70
     title: 'Missdiff: Training diffusion models on tabular data with missing values'
     year: '2023'
   KtLwkBYAAAAJ:qjMakFHDy7sC:
