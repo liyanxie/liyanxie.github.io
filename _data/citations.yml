@@ -1,5 +1,5 @@
 metadata:
-  last_updated: '2026-08-03'
+  last_updated: '2026-08-07'
 papers:
   KtLwkBYAAAAJ:0EnyYjriUFMC:
     citations: 4
@@ -26,7 +26,7 @@ papers:
     title: Spectral CUSUM for online network structure change detection
     year: '2023'
   KtLwkBYAAAAJ:8k81kl-MbHgC:
-    citations: 216
+    citations: 219
     title: 'Sequential (quickest) change detection: Classical results and new directions'
     year: '2021'
   KtLwkBYAAAAJ:9yKSN-GCB0IC:
