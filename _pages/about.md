@@ -7,6 +7,8 @@ position: Assistant Professor
 profile:
   image: highcompress_LiyanXie_2023.jpg
   alt: Liyan Xie
+  anime_image: liyan-xie-chatgpt-anime.jpg
+  anime_alt: ChatGPT-generated anime portrait of Liyan Xie by a mountain lake
 affiliations:
   - label: Department of Industrial and Systems Engineering
     url: https://cse.umn.edu/isye

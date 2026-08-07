@@ -6,14 +6,39 @@ layout: default
     <div class="home-photo" style="flex: 0 0 125px; width: 125px; max-width: 125px;">
       {% if page.profile.image %}
         {% assign profile_image_path = page.profile.image | prepend: 'assets/img/' %}
+        {% if page.profile.anime_image %}
+          {% assign anime_image_path = page.profile.anime_image | prepend: 'assets/img/' %}
+        {% endif %}
         <img
+          id="home-profile-image"
           src="{{ profile_image_path | relative_url | bust_file_cache }}"
           class="home-profile-image z-depth-1 rounded"
-          alt="{{ page.profile.alt }}"
+          alt="{{ page.profile.alt | escape }}"
           width="125"
+          height="158"
           loading="eager"
+          data-photo-src="{{ profile_image_path | relative_url | bust_file_cache }}"
+          data-photo-alt="{{ page.profile.alt | escape }}"
+          {% if page.profile.anime_image %}
+            data-anime-src="{{ anime_image_path | relative_url | bust_file_cache }}"
+            data-anime-alt="{{ page.profile.anime_alt | escape }}"
+          {% endif %}
           style="display: block; width: 125px; max-width: 125px; height: auto;"
         >
+        {% if page.profile.anime_image %}
+          <button
+            class="home-anime-toggle"
+            type="button"
+            aria-controls="home-profile-image"
+            aria-label="Toggle ChatGPT anime portrait"
+            aria-pressed="false"
+            data-home-anime-toggle
+            data-anime-label="See my ChatGPT anime"
+            data-photo-label="Back to my photo"
+          >
+            See my ChatGPT anime
+          </button>
+        {% endif %}
       {% endif %}
     </div>
 
@@ -53,4 +78,8 @@ layout: default
   <article class="home-body">
     {{ content }}
   </article>
+
+  {% if page.profile.anime_image %}
+    <script defer src="{{ '/assets/js/home-profile-toggle.js' | relative_url | bust_file_cache }}"></script>
+  {% endif %}
 </div>

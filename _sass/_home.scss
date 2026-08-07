@@ -28,6 +28,42 @@
   border-radius: 6px;
 }
 
+.home-anime-toggle {
+  visibility: hidden;
+  width: 125px;
+  min-height: 2rem;
+  margin-top: 0.45rem;
+  padding: 0.25rem 0.2rem;
+  border: 1px solid var(--global-text-color-light);
+  border-radius: 4px;
+  color: var(--global-text-color);
+  background: transparent;
+  cursor: pointer;
+  font: inherit;
+  font-size: 0.7rem;
+  line-height: 1.2;
+  white-space: nowrap;
+}
+
+.home-anime-toggle.is-ready {
+  visibility: visible;
+}
+
+.home-anime-toggle:hover:not(:disabled) {
+  border-color: var(--global-theme-color);
+  color: var(--global-theme-color);
+}
+
+.home-anime-toggle:focus-visible {
+  outline: 2px solid var(--global-theme-color);
+  outline-offset: 2px;
+}
+
+.home-anime-toggle:disabled {
+  cursor: wait;
+  opacity: 0.65;
+}
+
 .home-intro {
   flex: 1 1 auto;
   min-width: 0;
@@ -142,6 +178,11 @@
   .home-profile-image {
     width: 130px;
     max-width: 130px;
+  }
+
+  .home-anime-toggle {
+    width: 130px;
+    min-height: 2.5rem;
   }
 
   .home-intro h1 {
