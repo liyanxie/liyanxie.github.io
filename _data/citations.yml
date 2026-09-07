@@ -1,5 +1,5 @@
 metadata:
-  last_updated: '2026-08-07'
+  last_updated: '2026-09-07'
 papers:
   KtLwkBYAAAAJ:0EnyYjriUFMC:
     citations: 4
@@ -18,7 +18,7 @@ papers:
     title: Sequential Change Detection in Correlation Structures with Window-Limited Statistics
     year: '2025'
   KtLwkBYAAAAJ:5nxA0vEk-isC:
-    citations: 18
+    citations: 19
     title: Distributionally robust weighted k-nearest neighbors
     year: '2022'
   KtLwkBYAAAAJ:7PzlFSSx8tAC:
@@ -26,7 +26,7 @@ papers:
     title: Spectral CUSUM for online network structure change detection
     year: '2023'
   KtLwkBYAAAAJ:8k81kl-MbHgC:
-    citations: 219
+    citations: 223
     title: 'Sequential (quickest) change detection: Classical results and new directions'
     year: '2021'
   KtLwkBYAAAAJ:9yKSN-GCB0IC:
@@ -49,6 +49,10 @@ papers:
     citations: 0
     title: Training-Free Self-Correction for Multimodal Masked Diffusion Models
     year: '2026'
+  KtLwkBYAAAAJ:J_g5lzvAfSwC:
+    citations: 0
+    title: Quickest Change Detection in Parametric Models With 1-Bit Measurements
+    year: '2026'
   KtLwkBYAAAAJ:KlAtU1dfN6UC:
     citations: 0
     title: Robust Statistical Inference Through the Lens of Optimization
@@ -70,7 +74,7 @@ papers:
     title: 'HawkesLLM: Semantic Uncertainty Propagation in Agentic Text Simulation'
     year: '2026'
   KtLwkBYAAAAJ:QIV2ME_5wuYC:
-    citations: 68
+    citations: 70
     title: Window-limited CUSUM for sequential change detection
     year: '2023'
   KtLwkBYAAAAJ:RGFaLdJalmkC:
@@ -90,7 +94,7 @@ papers:
     title: Detecting Post-generation Edits to Watermarked LLM Outputs via Combinatorial Watermarking
     year: '2025'
   KtLwkBYAAAAJ:Tyk-4Ss8FVUC:
-    citations: 100
+    citations: 102
     title: Robust hypothesis testing using Wasserstein uncertainty sets
     year: '2018'
   KtLwkBYAAAAJ:ULOm3_A8WrAC:
@@ -102,7 +106,7 @@ papers:
     title: Sequential change-point detection via online convex optimization
     year: '2018'
   KtLwkBYAAAAJ:UebtZRa9Y70C:
-    citations: 26
+    citations: 27
     title: Convex parameter recovery for interacting marked processes
     year: '2020'
   KtLwkBYAAAAJ:W7OEmFMy1HYC:
@@ -122,7 +126,7 @@ papers:
     title: 'Survival Analysis with Graph-Based Regularization for Predictors: L. Xie et al.'
     year: '2025'
   KtLwkBYAAAAJ:YsMSGLbcyi4C:
-    citations: 53
+    citations: 54
     title: Sequential subspace change point detection
     year: '2020'
   KtLwkBYAAAAJ:ZeXyd9-uunAC:
@@ -134,7 +138,7 @@ papers:
     title: Recurrent neural goodness-of-fit test for time series
     year: '2024'
   KtLwkBYAAAAJ:_kc_bZDykSQC:
-    citations: 18
+    citations: 20
     title: Class-conditioned domain generalization via wasserstein distributional robust optimization
     year: '2021'
   KtLwkBYAAAAJ:bEWYMUwI8FkC:
@@ -146,11 +150,11 @@ papers:
     title: Score-Based Change-Point Detection and Region Localization for Spatio-Temporal Point Processes
     year: '2026'
   KtLwkBYAAAAJ:e5wmG9Sq2KIC:
-    citations: 20
+    citations: 21
     title: Transfer learning for diffusion models
     year: '2024'
   KtLwkBYAAAAJ:eQOLeE2rZwMC:
-    citations: 23
+    citations: 24
     title: Asynchronous multi-sensor change-point detection for seismic tremors
     year: '2019'
   KtLwkBYAAAAJ:hC7cP41nSMkC:
@@ -162,15 +166,15 @@ papers:
     title: 'eRPCA: Robust Principal Component Analysis for Exponential Family Distributions'
     year: '2024'
   KtLwkBYAAAAJ:hqOjcs7Dif8C:
-    citations: 20
+    citations: 21
     title: Sequential change-point detection for mutually exciting point processes
     year: '2023'
   KtLwkBYAAAAJ:iH-uZ7U-co4C:
-    citations: 7
+    citations: 9
     title: 'Differentially private online community detection for censored block models: Algorithms and fundamental limits'
     year: '2025'
   KtLwkBYAAAAJ:isC4tDSrTZIC:
-    citations: 5
+    citations: 6
     title: 'Discrete guidance matching: Exact guidance for discrete flow matching'
     year: '2026'
   KtLwkBYAAAAJ:j3f4tGmQtD8C:
@@ -178,11 +182,11 @@ papers:
     title: Improving adversarial robustness by contrastive guided diffusion process
     year: '2022'
   KtLwkBYAAAAJ:kNdYIx-mwKoC:
-    citations: 12
+    citations: 13
     title: Robust hypothesis testing with Wasserstein uncertainty sets
     year: '2021'
   KtLwkBYAAAAJ:k_IJM867U9cC:
-    citations: 6
+    citations: 7
     title: Error analysis of discrete flow with generator matching
     year: '2025'
   KtLwkBYAAAAJ:mVmsd5A6BfQC:
@@ -198,7 +202,7 @@ papers:
     title: Masked Diffusion Modeling for Anomaly Detection
     year: '2026'
   KtLwkBYAAAAJ:qUcmZB5y_30C:
-    citations: 71
+    citations: 75
     title: 'Missdiff: Training diffusion models on tabular data with missing values'
     year: '2023'
   KtLwkBYAAAAJ:qjMakFHDy7sC:
@@ -206,6 +210,6 @@ papers:
     title: Sequential detection of low-rank changes using extreme eigenvalues
     year: '2017'
   KtLwkBYAAAAJ:roLk4NBRz8UC:
-    citations: 33
+    citations: 34
     title: High-resolution spatio-temporal model for county-level COVID-19 activity in the US
     year: '2021'
