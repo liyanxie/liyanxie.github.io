@@ -53,7 +53,7 @@ layout: default
       </div>
 
       <div class="home-links" aria-label="Profile links">
-        {% if page.cv %}<a class="home-text-link" href="{{ page.cv | relative_url }}">CV</a>{% endif %}
+        {% if page.cv %}<a class="home-text-link" href="{{ page.cv | relative_url | bust_file_cache }}">CV</a>{% endif %}
         {% if page.research_statement %}
           <a class="home-text-link" href="{{ page.research_statement | relative_url }}">Research Statement (2-page)</a>
         {% endif %}
