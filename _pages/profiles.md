@@ -9,11 +9,11 @@ hide_title: true
 
 ## Ph.D. Students
 
-- [Zewei Deng](https://cse.umn.edu/isye/zewei-deng) (Fall 2025-)<br>
+- [Zewei Deng](https://zeweid1221.github.io/personal-website/) (Fall 2025-)<br>
   M.S., Applied Data Science, University of Chicago.<br>
   B.S., Statistics with minors in Computer Science and Economics, University of Illinois at Urbana-Champaign.
 
-- [Lixing Zhang](https://cse.umn.edu/isye/lixing-zhang) (Fall 2024-)<br>
+- [Lixing Zhang](https://lxzhang1.github.io/) (Fall 2024-)<br>
   B.S., Mathematics, The Chinese University of Hong Kong, Shenzhen.
 
 ## Undergraduate Students
