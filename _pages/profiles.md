@@ -10,6 +10,7 @@ hide_title: true
 ## Ph.D. Students
 
 - [Zewei Deng](https://zeweid1221.github.io/personal-website/) (Fall 2025-)<br>
+  Co-advised with [Shancong Mou](https://mou-group-umn.github.io/).<br>
   M.S., Applied Data Science, University of Chicago.<br>
   B.S., Statistics with minors in Computer Science and Economics, University of Illinois at Urbana-Champaign.
 
