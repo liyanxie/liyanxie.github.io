@@ -27,7 +27,9 @@ I am an Assistant Professor in the [Department of Industrial and Systems Enginee
 
 **Previously**: I was an Assistant Professor in the [School of Data Science](https://sds.cuhk.edu.cn/en) at [The Chinese University of Hong Kong, Shenzhen](https://www.cuhk.edu.cn/en). I received my Ph.D. in Industrial Engineering from [Georgia Institute of Technology](https://www.gatech.edu), and my B.S. in Statistics from the [University of Science and Technology of China](https://en.ustc.edu.cn) in 2016.
 
+{% comment %}
 *I am actively looking for Ph.D. students to join my research group in Fall 2025 or 2026. Please send me an email with your CV and transcript if you are interested.*
+{% endcomment %}
 
 ## Research Interest
 
